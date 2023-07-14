@@ -38,7 +38,7 @@ export const FooterComponent = ({isMobile}) => {
           varaint="subtitle1"
           sx={{ textAlign: "center", fontWeight: 800 }}
         >
-          Developmnet by Jorge Ochipinti
+          Developmnet by Royer Store
         </Typography>
       </Box>
     </>

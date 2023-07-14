@@ -28,24 +28,24 @@ export const ProductFilterPage = () => {
     "remera oversize",
     "remera deportiva",
     "musculosa",
+    "campera",
     "buzo",
     "short",
     "pantalon",
     "medias",
-    "campera",
   ];
   const todasCategoriasMujer = [
     "remera oversize",
     "remera deportiva",
     "top",
+    "campera",
     "buzo",
     "calza",
     "short",
     "medias",
-    "campera",
   ];
   const todasCategoriasSuplementos = ["proteina", "creatina"];
-  const todasCategoriasMaquinas = ["maquinas", "hogar", "fitness"];
+  const todasCategoriasMaquinas = ["maquinas", "fitness"];
 
   useEffect(() => {
     const allProductos = products.filter(
