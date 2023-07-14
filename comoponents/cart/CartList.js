@@ -105,7 +105,7 @@ export const CartList = ({ editable = false, products, isMobile }) => {
                   sx={{ transform: isMobile ? "scale(0.8)" : "auto" }}
                   variant="outlined"
                   color="error"
-                  onClick={() => removeCartProduct(product)}
+                  onClick={() => {removeCartProduct(product)}}
                 >
                   Remove
                 </Button>

@@ -7,29 +7,42 @@ import error from "../../animations/lf20_qpwbiyxf.json";
 import whatsapp from "../../animations/lf20_lfauq3rq.json";
 import { Box, Divider, Typography } from "@mui/material";
 
-export const FooterComponent = ({isMobile}) => {
+export const FooterComponent = ({ isMobile }) => {
   return (
     <>
       <Box sx={{ width: "100%", my: 4 }}>
         <Divider sc={{ my: 1 }} />
         <Box sx={{ width: "100%" }} display={"flex"} justifyContent={"center"}>
-          <Box sx={{ width: isMobile ? '20%':"5%", cursor: "pointer" }} display={"flex"}>
+          <Box
+            sx={{ width: isMobile ? "20%" : "5%", cursor: "pointer" }}
+            display={"flex"}
+          >
             <Lottie animationData={instagram} loop={true} />
           </Box>
-          <Box sx={{ width:isMobile ? '18%':"3.5%", cursor: "pointer" }} display={"flex"}>
+          <Box
+            sx={{ width: isMobile ? "18%" : "3.5%", cursor: "pointer" }}
+            display={"flex"}
+          >
             <Lottie animationData={email} loop={true} />
           </Box>
-          <Box sx={{ width: isMobile ? '20%':"5%", cursor: "pointer" }} display={"flex"}>
+          <Box
+            sx={{ width: isMobile ? "20%" : "5%", cursor: "pointer" }}
+            display={"flex"}
+          >
             <Lottie animationData={whatsapp} loop={true} />
           </Box>
         </Box>
-        <Box>
-          <Typography variant="body1" sx={{ textAlign: "center",my:3 }}>
-            Todos los derechos reservados. Onfit{" "}
-          </Typography>
-        </Box>
-        <Box sx={{ width: "100%",mt:6 }} display={"flex"} justifyContent={"center"}>
-          <Box sx={{ width: isMobile? '30%': "15%" }} display={"flex"} justifyContent={"center"}>
+
+        <Box
+          sx={{ width: "100%", mt: 6 }}
+          display={"flex"}
+          justifyContent={"center"}
+        >
+          <Box
+            sx={{ width: isMobile ? "30%" : "15%" }}
+            display={"flex"}
+            justifyContent={"center"}
+          >
             <Lottie animationData={computer} loop={true} />
           </Box>
         </Box>
