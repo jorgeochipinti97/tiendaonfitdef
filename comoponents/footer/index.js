@@ -33,7 +33,7 @@ export const FooterComponent = ({ isMobile }) => {
           </Box>
         </Box>
 
-        <Box
+        {/* <Box
           sx={{ width: "100%", mt: 6 }}
           display={"flex"}
           justifyContent={"center"}
@@ -52,7 +52,7 @@ export const FooterComponent = ({ isMobile }) => {
           sx={{ textAlign: "center", fontWeight: 800 }}
         >
           Developmnet by Royer Store
-        </Typography>
+        </Typography> */}
       </Box>
     </>
   );
