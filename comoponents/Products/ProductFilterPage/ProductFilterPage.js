@@ -37,6 +37,7 @@ export const ProductFilterPage = () => {
   const todasCategoriasMujer = [
     "remera oversize",
     "remera deportiva",
+    "musculosa",
     "top",
     "campera",
     "buzo",
@@ -62,12 +63,14 @@ export const ProductFilterPage = () => {
   const [categories, setCategories] = useState([]);
   const [select_, setSelect_] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
-  
+
   const onChangeSubType = (subType__) => {
-    const subtypeFilter = products.filter(e => e.subtype == subType__ && e.type == type_)
-    setProductsFiltered(subtypeFilter)
-    setSubtype_(subType__)
-  }
+    const subtypeFilter = products.filter(
+      (e) => e.subtype == subType__ && e.type == type_
+    );
+    setProductsFiltered(subtypeFilter);
+    setSubtype_(subType__);
+  };
   return (
     <>
       <Box sx={{ mt: 7 }}>
